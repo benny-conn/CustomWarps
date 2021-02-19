@@ -2,6 +2,7 @@ package net.tolmikarc.customwarp.command
 
 import net.tolmikarc.customwarp.constants.Permissions
 import net.tolmikarc.customwarp.settings.Localization
+import net.tolmikarc.customwarp.settings.Settings
 import net.tolmikarc.customwarp.storage.WarpStorage
 import org.mineacademy.fo.Messenger
 import org.mineacademy.fo.command.SimpleCommandGroup
@@ -29,5 +30,7 @@ class DeleteWarpCommand(parent: SimpleCommandGroup) : SimpleSubCommand(parent, "
         minArguments = 1
         description = Localization.DELETE_DESCRIPTION
         usage = "<name>"
+        if (!Settings.PERMISSIONS_ENABLED)
+            permission = null
     }
 }

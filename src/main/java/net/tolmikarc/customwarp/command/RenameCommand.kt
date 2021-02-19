@@ -2,6 +2,7 @@ package net.tolmikarc.customwarp.command
 
 import net.tolmikarc.customwarp.entity.Warp
 import net.tolmikarc.customwarp.settings.Localization
+import net.tolmikarc.customwarp.settings.Settings
 import net.tolmikarc.customwarp.storage.WarpStorage
 import org.mineacademy.fo.Messenger
 import org.mineacademy.fo.command.SimpleCommandGroup
@@ -33,5 +34,7 @@ class RenameCommand(parent: SimpleCommandGroup) : SimpleSubCommand(parent, "rena
         minArguments = 2
         description = Localization.RENAME_DESCRIPTION
         usage = "<warp> <name>"
+        if (!Settings.PERMISSIONS_ENABLED)
+            permission = null
     }
 }

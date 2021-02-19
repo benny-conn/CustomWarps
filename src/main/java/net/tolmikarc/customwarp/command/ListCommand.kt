@@ -1,6 +1,7 @@
 package net.tolmikarc.customwarp.command
 
 import net.tolmikarc.customwarp.settings.Localization
+import net.tolmikarc.customwarp.settings.Settings
 import net.tolmikarc.customwarp.storage.WarpStorage
 import org.mineacademy.fo.Common
 import org.mineacademy.fo.Messenger
@@ -30,5 +31,7 @@ class ListCommand(parent: SimpleCommandGroup) : SimpleSubCommand(parent, "list")
     init {
         description = Localization.LIST_DESCRIPTION
         usage = "[page]"
+        if (!Settings.PERMISSIONS_ENABLED)
+            permission = null
     }
 }

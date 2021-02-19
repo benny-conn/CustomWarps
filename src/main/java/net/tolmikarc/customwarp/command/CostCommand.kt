@@ -39,5 +39,7 @@ class CostCommand(parent: SimpleCommandGroup) : SimpleSubCommand(parent, "cost")
         minArguments = 2
         description = Localization.COST_DESCRIPTION
         usage = "<warp> <cost>"
+        if (!Settings.PERMISSIONS_ENABLED)
+            permission = null
     }
 }

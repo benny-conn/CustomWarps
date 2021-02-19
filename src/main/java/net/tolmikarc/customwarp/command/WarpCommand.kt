@@ -3,6 +3,7 @@ package net.tolmikarc.customwarp.command
 import io.papermc.lib.PaperLib
 import net.tolmikarc.customwarp.constants.Permissions
 import net.tolmikarc.customwarp.settings.Localization
+import net.tolmikarc.customwarp.settings.Settings
 import net.tolmikarc.customwarp.storage.WarpStorage
 import org.bukkit.Bukkit
 import org.mineacademy.fo.Messenger
@@ -63,6 +64,8 @@ class WarpCommand(parent: SimpleCommandGroup) : SimpleSubCommand(parent, "warp")
         minArguments = 1
         description = Localization.WARP_DESCRIPTION
         usage = "<name>"
+        if (!Settings.PERMISSIONS_ENABLED)
+            permission = null
     }
 
 }

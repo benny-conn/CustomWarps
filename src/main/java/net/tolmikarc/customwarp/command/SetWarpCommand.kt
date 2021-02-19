@@ -56,5 +56,7 @@ class SetWarpCommand(parent: SimpleCommandGroup) : SimpleSubCommand(parent, "set
         minArguments = 1
         description = Localization.SET_WARP_DESCRIPTION
         usage = "<name> [cost]"
+        if (!Settings.PERMISSIONS_ENABLED)
+            permission = null
     }
 }
