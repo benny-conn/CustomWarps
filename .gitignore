@@ -2,4 +2,4 @@
 build.xml
 target/
 *.xml
-Civilizations.iml
+*.iml
