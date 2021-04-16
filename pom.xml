@@ -119,7 +119,8 @@
                             <finalName>${project.name}-${project.version}</finalName>
                             <artifactSet>
                                 <includes>
-                                    <include>org.mineacademy:Foundation*</include>
+                                    <include>org.mineacademy:Game*</include>
+                                    <include>com.github.kangarko:Foundation*</include>
                                     <include>org.jetbrains.kotlin:kotlin-stdlib:*</include>
                                     <include>org.jetbrains.kotlinx:kotlinx-coroutines-core:*</include>
                                     <include>io.papermc:*</include>
