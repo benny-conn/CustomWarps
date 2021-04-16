@@ -11,4 +11,8 @@ class WarpCommandGroup : SimpleCommandGroup() {
         registerSubcommand(RenameCommand(this))
         registerSubcommand(ListCommand(this))
     }
+
+    override fun getCredits(): String {
+        return ""
+    }
 }
