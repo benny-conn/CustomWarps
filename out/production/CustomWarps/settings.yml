@@ -1,0 +1,16 @@
+# The prefix for messages from the plugin
+Prefix: "&2&lCW &7// "
+# How many milliseconds should an action take before the lag is logged to console
+Log_Lag_Over_Milis: 100
+Locale: en
+# should permissions be required to use the commands
+Permissions_Enabled: false
+# What is the cost of setting warps
+Set_Warp_Cost: 100.00
+# What is the max cost a player can set their warp
+Max_Warp_Cost: 25000.00
+# How many warps can a player have
+Max_Player_Warps: 10
+
+Debug: [ ]
+Version: 1

@@ -1,0 +1,5 @@
+name: CustomWarps
+version: 0.0.2
+main: net.tolmikarc.customwarp.CustomWarpsPlugin
+api-version: 1.13
+author: Tolmikarc
